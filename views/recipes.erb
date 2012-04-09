@@ -1,0 +1,7 @@
+Pages: <%= @pagination %>
+<ul id="recipe_list">
+  <% for @item in @list %>
+    <li><a href="/recipe/<%= @item[:Z_PK].to_s %>&pagesize=<%= @pagesize %>"><%= @item[:ZNAME] %></a></li>
+  <% end %>
+</ul>
+Pages: <%= @pagination %>

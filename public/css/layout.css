@@ -1,0 +1,11 @@
+body {
+font-family: Helvetica;
+font-size: 2em;
+}
+#paused_users {
+padding:0;
+margin:0;
+}
+#paused_users li {
+list-style-type:none;
+}

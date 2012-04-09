@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Written by Patrick McKenzie, 2010.
+# I release this work unto the public domain.
+#
+# sinatra      Startup script for Sinatra server.
+# description: Starts Sinatra as an unprivileged user.
+#
+
+USER=nobody
+GROUP=nobody
+DOMAIN_DIR=/opt/ruby/domains/internal.contegix.com/noctane_api
+sudo -u ${USER} ${GROUP} ${DOMAIN_DIR}/start.rb $1
+RETVAL=$?
+
+exit $RETVAL
